@@ -123,7 +123,7 @@ class LoginDetails : Fragment() {
                 ) {
                     val swipedItemPosition = viewHolder.adapterPosition
                     val loginItem: LoginDetailsItem = adapter.getItemAt(swipedItemPosition)
-                    viewModel.deleteLoginDetails(loginItem.id)
+                    viewModel.deleteLoginDetails(loginItem.Id)
                     adapter.itemDeleted(loginItem)
                     Toast.makeText(context, "Item deleted", Toast.LENGTH_SHORT)
                         .show()
